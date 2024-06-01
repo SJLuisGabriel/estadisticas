@@ -24,8 +24,8 @@ export class CapturaNumerosComponent {
     const numeros = this.inputNumeros.split(',').map(Number);
 
     // Validar que haya exactamente 20 números
-    if (numeros.length !== 20) {
-      this.showAlert('Debe ingresar exactamente 20 números.', false);
+    if (numeros.length < 20) {
+      this.showAlert('Debe ingresar 20 o más números.', false);
       return;
     }
 
