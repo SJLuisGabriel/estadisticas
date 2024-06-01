@@ -1,0 +1,23 @@
+<!-- resultados.component.html -->
+<div class="container">
+  <h2>Resultados</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Método</th>
+        <th scope="col">Números</th>
+        <th scope="col">Resultado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let resultado of resultados">
+        <td>{{ resultado.metodo }}</td>
+        <td>{{ resultado.numeros }}</td>
+        <td>{{ getValor(resultado.resultado.body, resultado.metodo) }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <button class="btn btn-secondary mt-3 p-10" routerLink="/captura-numeros">
+    Volver a Capturar Números
+  </button>
+</div>

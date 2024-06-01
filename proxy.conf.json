@@ -1,0 +1,8 @@
+{
+  "/api/*": {
+    "target": "https://5vg9nlhj66.execute-api.us-east-1.amazonaws.com",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}
